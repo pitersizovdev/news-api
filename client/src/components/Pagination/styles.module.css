@@ -7,20 +7,13 @@
 }
 
 .pageNumber{
-    cursor: pointer;
-    padding: 8px;
-    border: none;
-    background-color: white;
-}
-
-.list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 15px;
+    color: white;
 }
 
 .arrow{
     cursor: pointer;
     border: none;
-    background-color: white;
+    color: white;
+    background-color: rgba(245, 222, 179, 0);
 }

@@ -25,7 +25,6 @@ export const getCategories = async () => {
     const response = await axios.get(`${BASE_URL}/available/categories`, {
       params:{
         apiKey: API_KEY,
-
       }
     ,})
     return response.data;

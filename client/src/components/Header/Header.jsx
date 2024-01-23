@@ -7,11 +7,11 @@ const Header = () => {
       <h1>Greenlist</h1>
 
       <nav>
-        <ul>
+        <ul className={styles.headerNav}>
             <li>Home</li>
             <li>News</li>
             <li>Exch</li>
-            <button>Profile</button>
+            <button className={styles.headerBtn}>Profile</button>
         </ul>
       </nav>
     </header>

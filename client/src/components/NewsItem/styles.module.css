@@ -1,7 +1,25 @@
 .item {
-    width: 100%;
     display: flex;
     gap: 24px;
+    justify-content: center;
+}
+
+.titleImg {
+    width: 128px;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: gray;
+    border-radius: 6px;
+}
+
+.titleImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .title {
@@ -15,20 +33,13 @@
 
 .info {
     display: flex;
-    width: 50%;
+    width: 100%;
     flex-direction: column;
     gap: 8px;
 }
 
-.wraper {
-    width: 64px;
-    height: 64px;
-    background-color: gray;
-    background-position: center;
-    background-size: cover;
-    flex-shrink: 0;
-}
-
-img{
-    width: 64px;
+@media (max-width: 720px) {
+    .description {
+        display: none;
+    }
 }

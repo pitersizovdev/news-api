@@ -1,14 +1,27 @@
 .search {
     display: flex;
     width: 100%;
-    background-color: white;
     gap: 12px;
 }
 
 .input {
     width: 100%;
-    padding: 6px 10px;
-    border: 1px solid black;
+    padding: 12px 12px;
+    border: 1px rgba(114, 114, 114, 0.178) solid;
     border-radius: 12px;
-    margin: 12px;
+    margin: 12px 0 0 0;
+
+    backdrop-filter: blur(5px);
+    background-color: rgba(43, 43, 43, 0.075);
+    box-shadow: rgba(0, 0, 0, 0.158) 1px 4px 4px;
+    color: white;
+
+    transition: box-shadow 0.3s ease;
 }
+
+  
+  .input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(64, 255, 26, 0.2);
+  }
+  

@@ -13,7 +13,7 @@ const Main = () => {
   const [selectedCategory, setSelectedCategory] = useState('All')
   const [isLoading, setIsLoading] = useState(true)
   const [currentPage, setCurrentPage] = useState(1)
-  const [keywords, setKeywords] = useState('')
+  const [keywords, setKeywords] = useState('Crypto')
   const totalPages = 10
   const pageSizse = 10
   const debouncedKeywords=useDebounce(keywords, 1500)
@@ -36,7 +36,7 @@ const Main = () => {
   const fetchCategories= async () => {
     try {
       const response = await getCategories();
-      setCategories(['All', ...response.categories]);
+      setCategories(['All', "technology", "business", "finance", "economy", "politics"]);
       console.log(categories)
     } catch (error) {
       console.log(error);
